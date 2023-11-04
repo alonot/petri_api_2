@@ -290,6 +290,7 @@ def verifyCA(request):
             return r500("Invalid Form")
         
         data=request.data
+        print("print:",data)
 
         inputCAcode=data['CA_code'].strip()
         try:
