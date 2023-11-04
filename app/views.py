@@ -292,7 +292,7 @@ def verifyCA(request):
         data=request.data
         print("print:",data)
 
-        inputCAcode=data['CA_code'].strip()
+        inputCAcode=data['CAcode'].strip()
         try:
             event=EventTable.objects.get(ca_code=inputCAcode)
             return Response({
