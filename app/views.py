@@ -202,7 +202,7 @@ def apply_event(request):
     if request.data is None:
         return r500("invalid form")
     data=request.data
-
+    print(data,"Apply_Event")
     try:
         user_id=data['userid']
         event_id=data['eventId'].strip()
